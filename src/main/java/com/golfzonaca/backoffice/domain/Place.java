@@ -50,8 +50,7 @@ public class Place {
 
     @Column(name = "PLACE_ADDINFO", nullable = false)
     private String placeAddInfo;
-
-    //양방향 매핑
+    
     @OneToMany(mappedBy = "place")
     private List<Room> rooms = new LinkedList<>();
 
