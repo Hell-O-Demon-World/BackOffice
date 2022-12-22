@@ -47,8 +47,10 @@ public class User {
     @JoinColumn(name = "ROLE_ID")
     private Role role;
 
+    //양방향 매핑
     @OneToMany(mappedBy = "ratingWriter")
     private List<Rating> ratings = new LinkedList<>();
+
 
     public User(Long id) {
         this.id = id;
