@@ -17,7 +17,7 @@ spring:
     url: ENC(VukHz4I/AyobpFhnp41mjfVBCl6X6VxOkrbHR6PHHwEtwkMw4xSpGtlc8GYg7y2Zhy4wcwuvTtGVjXD3Adkkxw==)
     username: ENC(bGF1QpKuFm1KQzPMGPD8NIvWdoQbbcbJ)
     password: ENC(DV0w5wcWRKlfVphaWi8Mb83xOx5rx5Gh)
-
+    
 ### KakaoMap Api Key ###
 kakao:
   map:
