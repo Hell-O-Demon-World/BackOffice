@@ -14,10 +14,10 @@ cloud:
 ### MariaDB Release Server ###
 spring:
   datasource:
-    url: ENC(VukHz4I/AyobpFhnp41mjfVBCl6X6VxOkrbHR6PHHwEtwkMw4xSpGtlc8GYg7y2Zhy4wcwuvTtGVjXD3Adkkxw==)
-    username: ENC(bGF1QpKuFm1KQzPMGPD8NIvWdoQbbcbJ)
-    password: ENC(DV0w5wcWRKlfVphaWi8Mb83xOx5rx5Gh)
-    
+    url: ENC(8RGjgKwqoWxPXWWtozKImfcNo5GMUnCIMYvONc61FsNmKNqlVEmHnXVsHIEQBl9Ld7a/RJUCrSHzp7QxRKD0ldDBJju/8s6c)
+    username: ENC(IYZiiPFZ/d7XM0OxII/y5ZjgTPU7eKRJ)
+    password: ENC(tCx5PtshhUwYLTDIrXuItttIEB671nLL)
+
 ### KakaoMap Api Key ###
 kakao:
   map:
