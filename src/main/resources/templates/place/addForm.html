@@ -60,9 +60,9 @@
             </div>
         </div>
         <div>
-            <label for="placeDescription" th:text="#{label.place.placeDescription}">사무공간 설명</label>
+            <label for="placeDescription" th:text="#{label.place.placeDescription}">공간 설명</label>
             <input type="text" id="placeDescription" th:field="${place.placeDescription}" name="placeDescription"
-                   class="form-control" placeholder="공간 설명을 입력하세요" th:maxlength="50">
+                   class="form-control" placeholder="공간 설명을 입력하세요" th:maxlength="1000">
         </div>
         <div>
             <label for="postalCode">우편 번호</label>
@@ -74,9 +74,9 @@
         </div>
         <div>
             <label for="placeStart">오픈 시간</label>
-            <input type="time" id="placeStart" name="placeStart" class="form-control" th:step="3600">
+            <input type="time" id="placeStart" name="placeStart" class="form-control" th:step="3600", min="00:00:00" max="23:00:00">
             <label for="placeEnd">종료 시간</label>
-            <input type="time" id="placeEnd" name="placeEnd" class="form-control" th:step="3600">
+            <input type="time" id="placeEnd" name="placeEnd" class="form-control" th:step="3600" min="01:00:00" max="23:00:00">
         </div>
 
         <!-- multi checkbox -->
@@ -96,7 +96,7 @@
                 <label th:for="${#ids.next('roomType')}"
                        th:text="${room.description}" class="type-quantity">desk</label>
                 <input type="number" th:field="${place.roomQuantity}"
-                       class="type-quantity input" min="0" value=0>
+                       class="type-quantity input" min=0 value=0 th:value=0 required th:required="true">
             </div>
 
             <div class="imageFiles">
